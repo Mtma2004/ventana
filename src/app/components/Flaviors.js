@@ -1,3 +1,4 @@
+"use client";
 import { View } from "@react-three/drei";
 import React, { useRef, useState } from "react";
 import FloatingCan from "./FloatingCan";
