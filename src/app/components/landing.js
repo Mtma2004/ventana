@@ -11,11 +11,6 @@ import { useStore } from "../hooks/useStore.js";
 import { useEffect, useState } from "react";
 
 function Landing() {
-  useEffect(() => {
-    window.onresize = () => {
-      window.location.reload();
-    };
-  }, []);
   const ready = useStore((state) => state.ready);
   const isDesktop = useMediaQuery("(min-width : 768px)");
   const [readyState, setReadyState] = useState(!ready);
