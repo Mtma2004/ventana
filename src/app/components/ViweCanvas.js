@@ -1,15 +1,10 @@
 "use client";
 
-import { View } from "@react-three/drei";
+import { Loader, View } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import { Html } from "@react-three/drei";
-
-const Loader = dynamic(
-  () => import("@react-three/drei").then((mod) => mod.Loader),
-  { ssr: false }
-);
 
 function ViweCanvas() {
   return (
@@ -37,17 +32,11 @@ function ViweCanvas() {
       >
         {/* <OrbitControls makeDefault /> */}
 
-        <Suspense
-          fallback={
-            <Html>
-              <div className="loader"></div>
-            </Html>
-          }
-        >
+        <Suspense fallback={null}>
           <View.Port />
         </Suspense>
       </Canvas>
-      {/* <Loader /> */}
+      <Loader />
     </div>
   );
 }
