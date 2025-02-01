@@ -3,7 +3,7 @@ import React from "react";
 function Logo({ num, style }) {
   return (
     <svg
-      width="400px"
+      width="330px"
       height="120px"
       style={style}
       viewBox="49.26000366210937 5.479997253417963 401.47999267578126 139.04000549316407"
