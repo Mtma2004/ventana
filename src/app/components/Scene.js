@@ -126,6 +126,7 @@ function Scene() {
   return (
     <group ref={group}>
       <FloatingCan
+        scale={isDesktop ? 2 : 0.8}
         ref={pineapple}
         speed={2}
         rotation={0}
@@ -136,6 +137,7 @@ function Scene() {
         canrotation={Math.PI / 2 - 1}
       />
       <FloatingCan
+        scale={isDesktop ? 2 : 0.8}
         ref={grape}
         speed={2}
         rotation={0}
@@ -146,6 +148,7 @@ function Scene() {
         canrotation={Math.PI / 2 - 1.5}
       />
       <FloatingCan
+        scale={isDesktop ? 2 : 0.8}
         ref={apple}
         speed={2}
         rotation={0}
@@ -156,6 +159,7 @@ function Scene() {
         canrotation={Math.PI / 2 - 1}
       />
       <FloatingCan
+        scale={isDesktop ? 2 : 0.8}
         ref={strawberry}
         speed={2}
         rotation={0}
@@ -166,6 +170,7 @@ function Scene() {
         canrotation={Math.PI / 2 - 1}
       />
       <FloatingCan
+        scale={isDesktop ? 2 : 0.8}
         ref={peach}
         speed={2}
         rotation={0}
@@ -176,6 +181,7 @@ function Scene() {
         canrotation={Math.PI / 2 - 1}
       />
       <FloatingCan
+        scale={isDesktop ? 2 : 0.8}
         ref={kiwi}
         speed={2}
         rotation={0}

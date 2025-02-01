@@ -102,14 +102,14 @@ function Flaviors() {
           }
         >
           <FloatingCan
-            scale={isDesktop ? 3 : 0.8}
+            scale={isDesktop ? 3 : 1.5}
             ref={sodaRef}
             speed={2}
             rotation={0}
             flavor={Flaviors[curentFlaviorIndex].name}
             floating={2}
             range={[-0.1, 0.3, -0.1, 0.3]}
-            position={isDesktop ? [2.2, 11, 0] : [0.6, 3, 0]}
+            position={isDesktop ? [2.2, 11, 0] : [1, 5, 0]}
             canrotation={Math.PI / 2 - 1.3}
           />
 

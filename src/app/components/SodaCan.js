@@ -14,11 +14,10 @@ const metalMaterial = new THREE.MeshStandardMaterial({
 
 export function SodaCan({
   flavor = "grape",
-  scale = 2,
+  scale,
   position = [1, 4, 1],
   canrotation,
 }) {
-  const isDesktop = useMediaQuery("(min-width : 768px)");
   const { nodes } = useGLTF("/grap.gltf");
   const labels = {
     apple: useTexture("/labels/apple.png"),
