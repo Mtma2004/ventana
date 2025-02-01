@@ -69,7 +69,7 @@ function Flaviors() {
         style={{
           margin: "20px auto",
           width: "fit-content",
-          fontSize: "5dvw",
+          fontSize: "10dvw",
           textTransform: "capitalize",
           color: "white",
           position: "relative",
@@ -125,7 +125,7 @@ function Flaviors() {
       <p
         className="flaviorName"
         style={{
-          fontSize: "4dvw",
+          fontSize: "5dvw",
           width: "fit-content",
           margin: "10px auto",
           color: "white",
