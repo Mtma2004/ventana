@@ -98,7 +98,7 @@ function Flaviors() {
                   width: "400px",
                   height: "500px",
                 }
-              : { width: "260px", height: "500px" }
+              : { width: "260px", height: "500px", flexShrink: "2" }
           }
         >
           <FloatingCan
